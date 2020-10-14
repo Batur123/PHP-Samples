@@ -1,0 +1,24 @@
+Live Time Function
+<script>
+function startTime() {
+  var today = new Date();
+  currentHours = today.getHours();
+  currentHours = ("0" + currentHours).slice(-2);
+  var h = currentHours
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+Put this in HTML. So you can see the live-time
+<span id="txt"></span>

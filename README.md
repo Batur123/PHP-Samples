@@ -1,2 +1,2 @@
 # PHP-Samples
-PHP codes i wrote.
+PHP code samples
